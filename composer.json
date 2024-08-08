@@ -27,7 +27,7 @@
     "require": {
         "php": "^8.0",
         "algolia/scout-extended": "^1.18",
-        "laravel-enso/core": "^9.0"
+        "laravel-enso/core": "^10.0"
     },
     "autoload": {
         "psr-4": {

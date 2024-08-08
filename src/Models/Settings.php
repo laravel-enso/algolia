@@ -18,10 +18,6 @@ class Settings extends Model
 
     protected array $rememberableKeys = ['id'];
 
-    protected $casts = [
-        'enabled' => 'boolean',
-    ];
-
     private static $instance;
 
     public static function current(): self
@@ -34,5 +30,12 @@ class Settings extends Model
     public static function enabled(): bool
     {
         return self::current()->enabled;
+    }
+
+    protected function casts(): array
+    {
+        return [
+            'enabled' => 'boolean',
+        ];
     }
 }
