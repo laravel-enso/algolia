@@ -1,7 +1,8 @@
 {
     "name": "laravel-enso/algolia",
     "type": "library",
-    "description": "",
+    "description": "Algolia integration layer for Laravel Enso",
+    "license": "MIT",
     "authors": [
         {
             "name": "Adrian Ocneanu",
