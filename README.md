@@ -94,6 +94,10 @@ Required external packages:
 
 - [`algolia/scout-extended`](https://github.com/algolia/scout-extended) [↗](https://github.com/algolia/scout-extended)
 
+Companion frontend package:
+
+- [`@enso-ui/algolia`](https://docs.laravel-enso.com/frontend/algolia.html) [↗](https://github.com/enso-ui/algolia)
+
 ## Contributions
 
 are welcome. Pull requests are great, but issues are good too.
