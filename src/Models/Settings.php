@@ -5,12 +5,10 @@ namespace LaravelEnso\Algolia\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Config;
-use LaravelEnso\Helpers\Casts\Encrypt;
-use LaravelEnso\Rememberable\Traits\Rememberable;
 
 class Settings extends Model
 {
-    use HasFactory, Rememberable;
+    use HasFactory;
 
     protected $table = 'algolia_settings';
 
@@ -23,7 +21,7 @@ class Settings extends Model
     public static function current(): self
     {
         return self::$instance
-            ??= self::cacheGet(1)
+            ??= self::find(Config::get('enso.algolia.settingsId'))
             ?? self::factory()->create();
     }
 
